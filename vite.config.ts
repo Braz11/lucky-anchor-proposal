@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  base: "/",
+  base: "/lucky-anchor-proposal/",
   plugins: [react(), tailwindcss(), tsconfigPaths()],
 });

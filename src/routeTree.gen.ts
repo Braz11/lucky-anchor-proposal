@@ -31,32 +31,32 @@ const LuxuryRoute = LuxuryRouteImport.update({
 } as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
-  path: '/lucky-anchor-proposal/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/lucky-anchor-proposal/': typeof IndexRoute
-  '/lucky-anchor-proposal/luxury': typeof LuxuryRoute
-  '/lucky-anchor-proposal/scandinavian': typeof ScandinavianRoute
-  '/lucky-anchor-proposal/urban': typeof UrbanRoute
+  '/': typeof IndexRoute
+  '/luxury': typeof LuxuryRoute
+  '/scandinavian': typeof ScandinavianRoute
+  '/urban': typeof UrbanRoute
 }
 export interface FileRoutesByTo {
-  '/lucky-anchor-proposal/': typeof IndexRoute
-  '/lucky-anchor-proposal/luxury': typeof LuxuryRoute
-  '/lucky-anchor-proposal/scandinavian': typeof ScandinavianRoute
-  '/lucky-anchor-proposal/urban': typeof UrbanRoute
+  '/': typeof IndexRoute
+  '/luxury': typeof LuxuryRoute
+  '/scandinavian': typeof ScandinavianRoute
+  '/urban': typeof UrbanRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/lucky-anchor-proposal/': typeof IndexRoute
-  '/lucky-anchor-proposal/luxury': typeof LuxuryRoute
-  '/lucky-anchor-proposal/scandinavian': typeof ScandinavianRoute
-  '/lucky-anchor-proposal/urban': typeof UrbanRoute
+  '/': typeof IndexRoute
+  '/luxury': typeof LuxuryRoute
+  '/scandinavian': typeof ScandinavianRoute
+  '/urban': typeof UrbanRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/lucky-anchor-proposal/' | '/lucky-anchor-proposal/luxury' | '/lucky-anchor-proposal/scandinavian' | '/lucky-anchor-proposal/urban'
+  fullPaths: '/' | '/luxury' | '/scandinavian' | '/urban'
   fileRoutesByTo: FileRoutesByTo
   to: '/' | '/luxury' | '/scandinavian' | '/urban'
   id: '__root__' | '/' | '/luxury' | '/scandinavian' | '/urban'

@@ -95,15 +95,6 @@ function Index() {
                 Proposta de lançamento
               </a>
             </div>
-
-            <div className="flex flex-wrap items-center gap-8 mt-16 text-sm text-neutral-400">
-              <div className="flex items-center gap-2">
-                <div className="flex">{[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />)}</div>
-                <span><b className="text-white">{SHOP.rating}</b> · {SHOP.reviewsCount} reviews Google</span>
-              </div>
-              <div>📍 {SHOP.city}</div>
-              <div>📞 {SHOP.phone}</div>
-            </div>
           </div>
         </div>
       </section>
@@ -259,9 +250,6 @@ function Index() {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <a href={`tel:${SHOP.phone.replace(/\s/g, "")}`} className="inline-flex items-center gap-3 bg-amber-400 text-neutral-950 px-8 py-4 font-semibold hover:bg-amber-300 transition">
-              Aceitar proposta · {SHOP.phone}
-            </a>
             <a href="#styles" className="inline-flex items-center gap-3 border border-white/20 px-8 py-4 hover:bg-white/5 transition">
               Rever os estilos
             </a>
